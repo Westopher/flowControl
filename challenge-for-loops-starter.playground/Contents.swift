@@ -42,33 +42,64 @@ var squares = 0
 
 for i in range {
     squares = i * i
+    print("\(squares)")
 }
-squares
+
 
 
 
 
 /*:
- Write a for loop to iterate over the same range as in the exercise above and print the square root of each number. Hint: use `sqrt(...)`. You’ll need to type convert your loop constant.
- */
-
-// TODO: Write solution here
+// Write a for loop to iterate over the same range as in the exercise above and print the square root of each number. Hint: use `sqrt(...)`. You’ll need to type convert your loop constant.
+// */
+//
+//// TODO: Write solution here
 
 for i in range {
     let squareRoot = sqrt(Double(i))
     print("\(squareRoot)")
 }
-
-/*:
-  The code below iterates over only even rows. Change this to use a where clause on the first for loop to skip even rows instead of using continue. Check that the sum is still 448 after your modifications.
- */
-
-// TODO: Modify per instructions above
-
+//
+///*:
+//  The code below iterates over only even rows. Change this to use a where clause on the first for loop to skip even rows instead of using continue. Check that the sum is still 448 after your modifications.
+// */
+//
+//// TODO: Modify per instructions above
+//
 var sum = 0
 for row in 0..<8 where row % 2 == 1 {
   for column in 0..<8 {
     sum += row * column
   }
 }
-sum
+//sum
+
+
+//switch statements
+
+let number = 10
+
+switch number {
+    case 0:
+        print("Zero")
+case 10:
+        print("Ten")
+default:
+    print("Undefined")
+}
+
+let string = "dog"
+switch string {
+case "dog", "cat":
+    print("Animal is a house pet.")
+default:
+    print("not a house pet")
+}
+
+
+
+
+
+
+
+
