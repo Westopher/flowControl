@@ -60,3 +60,25 @@ default:
  */
 
 // TODO: Write solution here
+
+let tuple = ("West", 32)
+
+switch tuple {
+    case (let name, 0...2):
+        print("\(name )=Infant")
+case (let name, 3...12):
+    print("\(name ) = Child")
+case (let name, 13...19):
+    print("\(name ) = Teenager")
+case (let name, 20...39):
+    print("\(name ) = Adult")
+case (let name, 40...60):
+    print("\(name ) = Middle aged")
+default:
+    print("Elderly")
+}
+
+
+
+
+
