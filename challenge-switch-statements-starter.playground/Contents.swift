@@ -31,95 +31,32 @@
 import Foundation
 
 /*:
- ### FOR LOOPS
-
-Create a constant called range and set it equal to a range starting at 1 and ending with 10 inclusive. Write a for loop which iterates over this range and prints the square of each number.
+ ### SWITCH STATEMENTS
+ 
+ Write a switch statement that takes an age as an integer and prints out the life stage related to that age. You can make up the life stages, or use my categorization as follows: 0-2 years, Infant; 3-12 years, Child; 13-19 years, Teenager; 20-39, Adult;40-60, Middle aged; 61+, Elderly.
  */
 
 // TODO: Write solution here
-let range = 1...10
-var squares = 0
 
-for i in range {
-    squares = i * i
-    print("\(squares)")
+let lifeStage = 5
+
+switch lifeStage {
+case 0...2:
+    print("Infant")
+case 3...12:
+    print("Child")
+case 13...19:
+    print("Teenager")
+case 20...39:
+    print("Adult")
+case 40...60:
+    print("Middle aged")
+default:
+    print("Elderly")
 }
-
-
-
-
 
 /*:
-// Write a for loop to iterate over the same range as in the exercise above and print the square root of each number. Hint: use `sqrt(...)`. You’ll need to type convert your loop constant.
-// */
-//
-//// TODO: Write solution here
+ Write a switch statement that takes a tuple containing a string and an integer.  The string is a name, and the integer is an age. Use the same cases that you used in the previous exercise and let syntax to print out the name followed by the life stage. For example, for the author of thee challenges, it would print out "Matt is an adult.".
+ */
 
-for i in range {
-    let squareRoot = sqrt(Double(i))
-    print("\(squareRoot)")
-}
-//
-///*:
-//  The code below iterates over only even rows. Change this to use a where clause on the first for loop to skip even rows instead of using continue. Check that the sum is still 448 after your modifications.
-// */
-//
-//// TODO: Modify per instructions above
-//
-var sum = 0
-for row in 0..<8 where row % 2 == 1 {
-  for column in 0..<8 {
-    sum += row * column
-  }
-}
-//sum
-
-
-//switch statements
-
-let number = 100
-
-switch number {
-    case 0:
-        print("Zero")
-case 1...9:
-        print("between 1 and 9")
-default:
-    print("Undefined")
-}
-
-let string = "elephant"
-switch string {
-case "dog", "cat":
-    print("Animal is a house pet.")
-default:
-    print("not a house pet")
-}
-
-switch number {
-case _ where number % 2 == 0:
-    print("even")
-default:
-    print("odd")
-}
-
-let coordinates = (x: 3, y: 2, z: 5)
-switch coordinates {
-case (0, 0, 0):
-    print("origin")
-case (_, 0, 0):
-    print("On the X Axis")
-case (0, _, 0):
-    print("On the X Axis")
-case (0, 0, _):
-    print("On the Z Axis")
-default:
-    print("nowhere")
-}
-
-
-
-
-
-
-
+// TODO: Write solution here
